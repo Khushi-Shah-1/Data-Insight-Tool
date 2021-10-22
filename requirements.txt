@@ -8,8 +8,5 @@ pandas_profiling
 streamlit_pandas_profiling
 pycaret
 plotly
-io
-base64
 sklearn
 plotly
-os
