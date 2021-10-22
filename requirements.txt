@@ -10,5 +10,5 @@ pycaret
 plotly
 sklearn
 io
-os
+base64
 
