@@ -9,4 +9,3 @@ streamlit_pandas_profiling
 pycaret
 plotly
 sklearn
-plotly
