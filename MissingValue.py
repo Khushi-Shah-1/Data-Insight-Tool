@@ -60,7 +60,7 @@ def app():
         st.write(df.isnull().sum())  
         st.write(df.head(15))
         
-        file1= df.to_csv()
+        file1= df.to_csv(encoding='utf-8')
       #  towrite = io.BytesIO()
        # downloaded_file = df.to_csv(towrite, encoding='utf-8', index=False, header=True)
        # towrite.seek(0)  # reset pointer
