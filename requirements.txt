@@ -10,5 +10,4 @@ pycaret
 plotly
 sklearn
 io
-base64
 
