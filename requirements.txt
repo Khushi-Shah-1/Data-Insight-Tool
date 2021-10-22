@@ -13,4 +13,4 @@ base64
 sklearn
 plotly
 os
-altar
+altair
