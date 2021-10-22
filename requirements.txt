@@ -11,4 +11,4 @@ streamlit_pandas_profiling
 pycaret
 plotly
 sklearn
-
+base58==2.0.1
