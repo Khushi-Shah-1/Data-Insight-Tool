@@ -11,7 +11,7 @@ Currently, there are 5 features available,
 3. Visualization: Here, you can select the variables and the type of graph you want to see.
 
 4. Anomaly Detection: It helps you to find outliers in the dataset.
-![NewYorkTaxi Dataset][https://github.com/Khushi-Shah-1/Data-Insight-Tool/blob/master/Screenshot%20(860).png]
-NY Taxi Dataset is used.
+![NewYorkTaxi Dataset](https://github.com/Khushi-Shah-1/Data-Insight-Tool/blob/master/Screenshot%20(860).png)
+NYC Taxi Dataset is used.
 
 5. Random Forest Regressor: You can choose the dataset and hyperparameters and visualize the RMSE and R2 without any code!
