@@ -36,10 +36,7 @@ def app():
         st.write('Y variable')
         st.info(Y.name)
     
-        lr = LinearRegression(
-            bootstrap=parameter_bootstrap,
-            oob_score=parameter_oob_score,
-            n_jobs=parameter_n_jobs)
+        lr = LinearRegression()
         lr.fit(X_train, Y_train)
     
         st.subheader('2. Model Performance')
@@ -66,22 +63,13 @@ def app():
     #---------------------------------#
     st.write("""
     # Linear Regression
-
-    Try adjusting the hyperparameters!    
     """)
     
     #---------------------------------#
     
     # Sidebar - Specify parameter settings
     with st.sidebar.header('2. Set Parameters'):
-        split_size = st.sidebar.slider('Data split ratio (% for Training Set)', 10, 90, 80, 5)
-    
-    
-    with st.sidebar.subheader('2.2. General Parameters'):
-        parameter_bootstrap = st.sidebar.select_slider('Bootstrap samples when building trees (bootstrap)', options=[True, False])
-        parameter_oob_score = st.sidebar.select_slider('Whether to use out-of-bag samples to estimate the R^2 on unseen data (oob_score)', options=[False, True])
-        parameter_n_jobs = st.sidebar.select_slider('Number of jobs to run in parallel (n_jobs)', options=[1, -1])
-    
+        split_size = st.sidebar.slider('Data split ratio (% for Training Set)', 10, 90, 80, 5)    
     
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
