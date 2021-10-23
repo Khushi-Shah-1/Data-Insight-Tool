@@ -10,12 +10,14 @@ import RandomForest
 import Plots
 import MissingValue
 import streamlit as st
+import LinearRegression
 #from footer import footer
 
 PAGES = {"Data profiling": ProfilingReport,
          "Missing Values": MissingValue,
          "Visualization": Plots,
          "Anomaly Detector": AnomalyDetection,
+         "Linear Regression": LinearRegression,
          "Random Forest Regressor": RandomForest,
          }
 
