@@ -67,12 +67,9 @@ def app():
     
     #---------------------------------#
     st.write("""
-    # Random Forest Regressor
-    
-    The *RandomForestRegressor()* function is used in this app for build a regression model using the **Random Forest** algorithm.
-    
-    Try adjusting the hyperparameters!
-    
+    # Linear Regression
+
+    Try adjusting the hyperparameters!    
     """)
     
     #---------------------------------#
