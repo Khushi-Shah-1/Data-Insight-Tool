@@ -16,4 +16,6 @@ Iris Flowers dataset is used.
 ![NewYorkTaxi Dataset](https://github.com/Khushi-Shah-1/Data-Insight-Tool/blob/master/Screenshot%20(860).png)
 NYC Taxi Dataset is used.
 
-5. Random Forest Regressor: You can choose the dataset and hyperparameters and visualize the RMSE and R2 without any code!
+5. Linear Regression
+
+6. Random Forest Regressor: You can choose the dataset and hyperparameters and visualize the RMSE and R2 without any code!
