@@ -2,7 +2,7 @@ The app: https://share.streamlit.io/khushi-shah-1/data-insight-tool/DataInsight.
 
 The aim of this project was to build an all-in-one place to explore your data very easily!
 
-Currently, there are 5 features available, 
+Currently, there are 6 features available, 
 
 1. Data Profiling: It provides an overview of dataset, no. of missing values, information on variables, correlation etc.
 
