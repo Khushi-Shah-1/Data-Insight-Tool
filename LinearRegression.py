@@ -37,7 +37,6 @@ def app():
         st.info(Y.name)
     
         lr = LinearRegression(
-            random_state=parameter_random_state,   
             criterion=parameter_criterion,
             bootstrap=parameter_bootstrap,
             oob_score=parameter_oob_score,
@@ -80,7 +79,6 @@ def app():
     
     
     with st.sidebar.subheader('2.2. General Parameters'):
-        parameter_random_state = st.sidebar.slider('Seed number (random_state)', 0, 1000, 42, 1)
         parameter_criterion = st.sidebar.select_slider('Performance measure (criterion)', options=['mse', 'mae'])
         parameter_bootstrap = st.sidebar.select_slider('Bootstrap samples when building trees (bootstrap)', options=[True, False])
         parameter_oob_score = st.sidebar.select_slider('Whether to use out-of-bag samples to estimate the R^2 on unseen data (oob_score)', options=[False, True])
