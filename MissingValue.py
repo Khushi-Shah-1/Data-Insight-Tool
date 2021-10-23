@@ -60,13 +60,11 @@ def app():
         st.write(df.isnull().sum())  
         st.write(df.head(15))
         
-        file1= df.to_csv(encoding='utf-8')
         towrite = io.BytesIO()
         downloaded_file = df.to_excel(towrite,encoding='utf-8', index=False, header=True)
         towrite.seek(0)  # reset pointer
         b64 = base64.b64encode(towrite.read()).decode()  # some strings
         linko = f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="anomaly.csv">Download csv file</a>'
-        #linko = f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{file1}" download="anomaly.csv">Download csv file</a>'
         st.markdown(linko, unsafe_allow_html=True)
         
         
