@@ -62,7 +62,7 @@ def app():
         
         file1= df.to_csv(encoding='utf-8')
         towrite = io.BytesIO()
-        downloaded_file = df.to_csv(towrite)
+        downloaded_file = df.to_csv()
         towrite.seek(0)  # reset pointer
         b64 = base64.b64encode(towrite.read()).decode()  # some strings
         linko = f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="anomaly.csv">Download csv file</a>'
